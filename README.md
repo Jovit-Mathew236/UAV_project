@@ -13,15 +13,14 @@ Follow these steps to set up and run the project on your local machine.
 
 Make sure you have Python installed on your system (Python 3.7 or later recommended).
 
-### Step 1: Create a New Project Folder
+### Step 1: Clone the Repository
 
-Open your terminal and execute the following commands:
+Clone the project repository from GitHub:
 
 ```bash
-mkdir UAV_Project
-cd UAV_Project
+git clone https://github.com/Jovit-Mathew236/UAV_project/
+cd UAV_project
 ```
-
 ### Step 2: Set Up a Virtual Environment
 
 Create and activate a virtual environment:
@@ -40,15 +39,6 @@ Install the necessary Python packages:
 pip install tqdm psutil pycryptodome cryptography
 ```
 
-### Step 4: Clone the Repository
-
-Clone the project repository from GitHub:
-
-```bash
-git clone https://github.com/taneya1987/CRYSTALS-Kyber-and-IDS.git
-cd CRYSTALS-Kyber-and-IDS
-```
-
 ### Step 5: Set the Python Path
 
 Set the Python path to ensure the modules can be imported correctly. Adjust the path to match your project directory:
@@ -63,10 +53,6 @@ set PYTHONPATH=%cd%  # For Windows
 Open a new terminal, navigate to the project folder, activate the virtual environment, and run the server:
 
 ```bash
-cd UAV_Project
-venv\Scripts\activate
-cd CRYSTALS-Kyber-and-IDS
-set PYTHONPATH=%cd%  # For Windows
 python server/server.py
 ```
 
@@ -75,9 +61,7 @@ python server/server.py
 Open another terminal window, activate the virtual environment, and run the client:
 
 ```bash
-cd UAV_Project
 venv\Scripts\activate
-cd CRYSTALS-Kyber-and-IDS
 set PYTHONPATH=%cd%  # For Windows
 python clients/client_1.py
 ```
@@ -87,7 +71,7 @@ python clients/client_1.py
 Follow the prompts in the client terminal to choose between ECC and CRYSTALS-Kyber. You can send files by specifying the file path, for example:
 
 ```bash
-python clients/client_1.py file:client_files/your_file.jpg
+file:client_files/your_file.jpg
 ```
 
 ## Conclusion
